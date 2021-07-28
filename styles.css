@@ -1,0 +1,48 @@
+body {
+  background: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: 'Oswald';
+  font-weight: 700;
+  position: relative;
+  margin: 30px auto;
+  text-transform: uppercase;
+  width: 550px;
+  background-color: black;
+}
+
+.hcircleright::after {
+  color: #4A90E2;
+  display: inline-block;
+  height: 14px;
+  width: 6px;
+  content: '';
+  position: relative;
+  top: -4em;
+  bottom: 3em;
+  left: 15.5em;
+  right: 1em;
+  border: 12px solid;
+  box-sizing: border-box;
+  border-radius: 0% 50% 50% 0% / 30% 50% 50% 30%;
+}
+
+.hcircleleft::before {
+  color: #4A90E2;
+  display: inline-block;
+  height: 14px;
+  width: 6px;
+  content: '';
+  position: relative;
+  top: 4.45em;
+  bottom: 4em;
+  z-index: +1;
+  left: -15.5em;
+  right: 2px;
+  border: 12px solid;
+  box-sizing: border-box;
+  border-radius: 50% 0% 0% 50% / 50% 30% 30% 50%;
+}
